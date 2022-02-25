@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!---------- Bootstrap CSS ---------->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <!---------- Custom CS ------------>
+    <link rel="stylesheet" href="./assets/css/style.css">
+
+    <title>Get your weather</title>
+</head>
+
+<body>
+
+    <header class=" container mt-5 d-flex justify-content-between">
+        <h5 class="text-white">Get your city <span>weather</span> </h5>
+        <svg xmlns="http://www.w3.org/2000/svg" role="button" width="30" height="30" fill="currentColor"
+            class="bi bi-list-nested fs-3 text-white" viewBox="0 0 16 16">
+            <path fill-rule="evenodd"
+                d="M4.5 11.5A.5.5 0 0 1 5 11h10a.5.5 0 0 1 0 1H5a.5.5 0 0 1-.5-.5zm-2-4A.5.5 0 0 1 3 7h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm-2-4A.5.5 0 0 1 1 3h10a.5.5 0 0 1 0 1H1a.5.5 0 0 1-.5-.5z" />
+        </svg>
+    </header>
+
+    <main class="d-flex align-items-center justify-content-center container">
+        <div class="input-group w-75 mb-3">
+            <input type="text" placeholder="Enter your city" class="form-control py-3 fs-5 border-0 ps-4" aria-label="Recipient's username"
+                aria-describedby="basic-addon2">
+            <span class="input-group-text border-0 bg-white curs" role="button" id="basic-addon2">
+                <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" fill="currentColor" class="bi bi-search me-3 mt-1 fs-4" viewBox="0 0 16 16">
+                <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+              </svg></span>
+        </div>
+    </main>
+
+    <!---------- Bootstrap JS ---------->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
