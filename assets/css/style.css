@@ -25,7 +25,7 @@ main{
     margin: 0 1% 0 1%;
 }
 .output-effect{
-    height: 30%;
+    height: 20%;
     transition: .2s;
 }
 .temp{
@@ -45,4 +45,7 @@ sub {
 }
 hr:not([size]) {
     height: .5px;
+}
+.card{
+    margin-top: -10px;
 }
