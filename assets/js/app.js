@@ -1,5 +1,5 @@
 //  API's functionalities
-const key = 'X61EYFUtcbbdGZaVoNPXAF0sMldgy4G7';
+const key = 'GmPKV1wZGcxNgCGybzP75F6IzJxgxx1M';
 
 // Get city
 const getCity = async (city) => {
@@ -18,7 +18,7 @@ const getWeather = async (cityId) => {
 
     console.log( baseUrl+query)
     const res = await fetch(baseUrl + query)
-    const data = await res.json();
+    const data = await res.json()
     return data[0]
 }
 
