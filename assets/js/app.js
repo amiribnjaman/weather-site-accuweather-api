@@ -75,18 +75,18 @@ const updateUi = (data) => {
                 <div class="col-md-6 mt-5">
                     <ul class="mt-2 ps-0">
                         <li class="d-flex justify-content-between">
-                            <h6>Day/Night:<h6>
-                            <h6>${ weather.IsDayTime ? 'Day' : 'Night'}</h6>
+                            <h6 class="fw-normal">Day/Night:<h6>
+                            <h6 class="fw-normal">${ weather.IsDayTime ? 'Day' : 'Night'}</h6>
                         </li>
                         <hr class="my-2"/>
                         <li class="d-flex justify-content-between">
-                            <h6>Weather Condition:<h6>
-                            <h6>${weather.WeatherText}</h6>
+                            <h6 class="fw-normal">Weather Condition:<h6>
+                            <h6 class="fw-normal">${weather.WeatherText}</h6>
                         </li>
                         <hr class="my-2"/>
                         <li class="d-flex justify-content-between">
-                            <h6>Precipitate?<h6>
-                            <h6>${weather.HasPrecipitation ? "Yes, It's a Rainy Day" : "No, It's a sunny day"}</h6>
+                            <h6 class="fw-normal">Precipitate?<h6>
+                            <h6 class="fw-normal">${weather.HasPrecipitation ? "Yes, It's a Rainy Day" : "No, It's a sunny day"}</h6>
                         </li>
                     </ul>
                 </div>
