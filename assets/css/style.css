@@ -34,12 +34,12 @@ main{
 sup {
     position: absolute;
     font-size: 51px;
-    top: 42px;
+    top: 50%;
     font-weight: normal;
 }
 sub {
     position: absolute;
-    top: 65px;
+    top: 70%;
     font-size: 28px;
     font-weight: lighter;
 }

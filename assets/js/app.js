@@ -61,19 +61,19 @@ const updateUi = (data) => {
     div.innerHTML = `
         <div class="card p-3" style="">
             <div class="row">
-                <div class="col-sm-6">
-                    <h5 class="fw-light">Current Weather</h5>
-                    <h6 class="my-2">${city.EnglishName}, ${city.Country.EnglishName}.</h6>
+                <div class="col-md-6">
+                    <h5 class="fw-light ms-1">Current Weather</h5>
+                    <h6 class="my-2 ms-1">${city.EnglishName}, ${city.Country.EnglishName}.</h6>
                     <div class="d-flex justify-content-between">
                         <img src="./assets/icons/${weather.WeatherIcon}.svg" style="width: 125px;" />
-                        <div>
+                        <div class="me-3 pt-4 pt-md-0">
                             <h1 class="display-1 text-end fw-bold temp mt-1">${weather.Temperature.Metric.Value}<sup>&deg;</sup> <sub>c</sub></h1>
 
                         </div>
                     </div>
                 </div>
-                <div class="col-sm-6 mt-5">
-                    <ul class="mt-2">
+                <div class="col-md-6 mt-5">
+                    <ul class="mt-2 ps-0">
                         <li class="d-flex justify-content-between">
                             <h6>Day/Night:<h6>
                             <h6>${ weather.IsDayTime ? 'Day' : 'Night'}</h6>
