@@ -1,5 +1,5 @@
 //  API's functionalities
-const key = 'VWCDNycO3tmjaAXRUU0zOJHPgqtPRbTJ';
+const key = 'X61EYFUtcbbdGZaVoNPXAF0sMldgy4G7';
 
 // Get city
 const getCity = async (city) => {
@@ -67,7 +67,7 @@ const updateUi = (data) => {
                     <div class="d-flex justify-content-between">
                         <img src="./assets/icons/${weather.WeatherIcon}.svg" style="width: 125px;" />
                         <div class="me-3 pt-4 pt-md-0">
-                            <h1 class="display-1 text-end fw-bold temp mt-1">${weather.Temperature.Metric.Value}<sup>&deg;</sup> <sub>c</sub></h1>
+                            <h1 class="display-1 text-end fw-normal temp mt-1">${weather.Temperature.Metric.Value}<sup class="fs-1">&deg;</sup> <sub class="fs-4">c</sub></h1>
 
                         </div>
                     </div>
