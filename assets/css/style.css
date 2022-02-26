@@ -21,8 +21,28 @@ main{
     align-items: center;
     justify-content: center;
 }
-
-#output-effect{
-    height: 70%;
+.card{
+    margin: 0 1% 0 1%;
+}
+.output-effect{
+    height: 30%;
     transition: .2s;
+}
+.temp{
+    position: relative;
+}
+sup {
+    position: absolute;
+    font-size: 51px;
+    top: 42px;
+    font-weight: normal;
+}
+sub {
+    position: absolute;
+    top: 65px;
+    font-size: 28px;
+    font-weight: lighter;
+}
+hr:not([size]) {
+    height: .5px;
 }
