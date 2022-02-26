@@ -28,6 +28,8 @@ const getWeather = async (cityId) => {
 // Preloader
 const preloader = document.getElementById('preloader');
 document.getElementById('search-btn').addEventListener('click', () => {
+    const inputSection = document.getElementById('input-sec');
+    inputSection.classList.remove('output-effect');
     preloader.style.display = 'block';
 
     const output = document.getElementById('weather-output');
