@@ -16,7 +16,6 @@ const getWeather = async (cityId) => {
     const baseUrl = 'https://dataservice.accuweather.com/currentconditions/v1/';
     const query = `${cityId}?apikey=${key}`;
 
-    console.log( baseUrl+query)
     const res = await fetch(baseUrl + query)
     const data = await res.json()
     return data[0]
@@ -38,7 +37,6 @@ document.getElementById('search-btn').addEventListener('click', () => {
 // Update city
 const updateCity = async (city) => {
     const cityDetails = await getCity(city);
-    console.log(cityDetails.Key)
     const weather = await getWeather(cityDetails.Key);
 
     updateUi({cityDetails, weather})
@@ -50,9 +48,6 @@ const updateUi = (data) => {
     const output = document.getElementById('weather-output');
     const city = data.cityDetails;
     const weather = data.weather;
-
-    console.log(city)
-    console.log(weather)
 
 
     inputSection.classList.add('output-effect');
@@ -66,7 +61,7 @@ const updateUi = (data) => {
     } else {
         icons = randIcons;
     }
-    console.log(icons)
+
     div.innerHTML = `
         <div class="card p-3" style="">
             <div class="row">
