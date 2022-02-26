@@ -1,5 +1,5 @@
 //  API's functionalities
-const key = 'GmPKV1wZGcxNgCGybzP75F6IzJxgxx1M';
+const key = 'vm4930c2lYACDcMJ0ovtPCbtN30jvQjF';
 
 // Get city
 const getCity = async (city) => {
@@ -58,6 +58,15 @@ const updateUi = (data) => {
     inputSection.classList.add('output-effect');
     
     const div = document.createElement('div');
+
+    let icons = null;
+    const randIcons = Math.ceil(Math.random() * 23);
+    if(weather.WeatherIcon == randIcons){
+        icons = weather.WeatherIcon;
+    } else {
+        icons = randIcons;
+    }
+    console.log(icons)
     div.innerHTML = `
         <div class="card p-3" style="">
             <div class="row">
@@ -65,7 +74,7 @@ const updateUi = (data) => {
                     <h5 class="fw-light ms-1">Current Weather</h5>
                     <h6 class="my-2 ms-1">${city.EnglishName}, ${city.Country.EnglishName}.</h6>
                     <div class="d-flex justify-content-between">
-                        <img src="./assets/icons/${weather.WeatherIcon}.svg" style="width: 125px;" />
+                        <img src="./assets/icons/${icons}.svg" style="width: 125px;" />
                         <div class="me-3 pt-4 pt-md-0">
                             <h1 class="display-1 text-end fw-normal temp mt-1">${weather.Temperature.Metric.Value}<sup class="fs-1">&deg;</sup> <sub class="fs-4">c</sub></h1>
 
