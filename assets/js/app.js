@@ -1,6 +1,7 @@
 //  API's functionalities
 const key = 'vm4930c2lYACDcMJ0ovtPCbtN30jvQjF';
 
+
 // Get city
 const getCity = async (city) => {
     const baseUrl = 'https://dataservice.accuweather.com/locations/v1/cities/search';
@@ -23,9 +24,13 @@ const getWeather = async (cityId) => {
 
 
 // Event handler
-document.getElementById('search-btn').addEventListener('click', () => {
-    const output = document.getElementById('weather-output');
 
+// Preloader
+const preloader = document.getElementById('preloader');
+document.getElementById('search-btn').addEventListener('click', () => {
+    preloader.style.display = 'block';
+
+    const output = document.getElementById('weather-output');
     const cityInput = document.getElementById('city-name');
     const city = cityInput.value;
     updateCity(city);
@@ -39,6 +44,11 @@ const updateCity = async (city) => {
     const cityDetails = await getCity(city);
     const weather = await getWeather(cityDetails.Key);
 
+    if(city != ''){
+        preloader.style.display = 'none';
+    } else {
+        preloader.style.display = 'block';
+    }
     updateUi({cityDetails, weather})
 }
 
@@ -48,7 +58,6 @@ const updateUi = (data) => {
     const output = document.getElementById('weather-output');
     const city = data.cityDetails;
     const weather = data.weather;
-
 
     inputSection.classList.add('output-effect');
     

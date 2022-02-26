@@ -52,3 +52,11 @@ hr:not([size]) {
 .card{
     margin-top: -10px;
 }
+#preloader{
+    /* margin-top: -45px; */
+    display: none;
+}
+.preloader{
+    margin-top: 30px;
+    width: 200px;
+}
