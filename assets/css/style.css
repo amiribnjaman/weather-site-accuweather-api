@@ -21,3 +21,8 @@ main{
     align-items: center;
     justify-content: center;
 }
+
+#output-effect{
+    height: 70%;
+    transition: .2s;
+}

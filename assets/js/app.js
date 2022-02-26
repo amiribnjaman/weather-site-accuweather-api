@@ -21,3 +21,19 @@ const getWeather = async (cityId) => {
     return data[0]
 }
 
+
+// Event handler
+document.getElementById('search-btn').addEventListener('click', () => {
+    const cityInput = document.getElementById('city-name');
+    const city = cityInput.value;
+    updateCity(city);
+    cityInput.value = '';
+});
+
+const updateCity = async (city) => {
+    const cityDetails = await getCity(city);
+    const weather = await getWeather(cityDetails.Key);
+
+    updateUi({cityDetails, weather})
+}
+
